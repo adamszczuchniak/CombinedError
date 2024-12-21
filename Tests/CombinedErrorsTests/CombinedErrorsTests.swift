@@ -77,7 +77,7 @@ final class CombinedErrorsTests: XCTestCase {
                 case .finished:
                     break
                 case let .failure(combinedError):
-                    // errors parameter is NetworkDatabaseErrors aka CombinedError<NetworkError, DatabaseError>
+                    // combinedError parameter is NetworkDatabaseErrors aka CombinedError<NetworkError, DatabaseError>
 
                     // fetching error via variable, in this example error2 is optional DatabaseError
                     let error2 = combinedError.error2
